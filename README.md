@@ -118,7 +118,7 @@ Based on provided datasets, the data model can be described as having two entiti
 
 There is a one-to-many relationship between Sensors and Counts, where one sensor can have multiple counts associated with it. The relationship is - based on the sensor_id attribute, which is a foreign key in the Counts entity, referencing the primary key of the Sensors entity.
 
-![ERD diagram](https://github.com/.../blob/main/docs/ERD.png)
+![ERD diagram](https://github.com/bakhshi-ali/Belongs-test/blob/main/ERD.png)
 
 ---
 
@@ -126,7 +126,7 @@ There is a one-to-many relationship between Sensors and Counts, where one sensor
 
 A suggesstion for deployment of API in AWS is shown in figure below.
 
-![Deployment architecture]([https://github.com/.../blob/main/docs/Deployment_architecture.jpg](https://github.com/bakhshi-ali/Belongs-test/blob/main/Deployment_architecture.jpg?raw=true))
+![Deployment architecture](https://github.com/bakhshi-ali/Belongs-test/blob/main/Deployment_architecture.jpg)
 
 ---
 
