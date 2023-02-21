@@ -122,14 +122,6 @@ There is a one-to-many relationship between Sensors and Counts, where one sensor
 
 ---
 
-## Deployment Suggestions
-
-A suggesstion for deployment of API in AWS is shown in figure below.
-
-![Deployment architecture](https://github.com/bakhshi-ali/Belongs-test/blob/main/Deployment_architecture.jpg)
-
----
-
 ## License
 
 Belongs-test is licensed under MIT.
