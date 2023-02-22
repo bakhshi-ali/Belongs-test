@@ -2,7 +2,6 @@ import pandas as pd
 import sqlite3
 from datetime import datetime
 import os
-
 # Get the absolute path of the script
 script_path = os.path.abspath(__file__)
 # Get the directory containing the script
