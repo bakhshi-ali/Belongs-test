@@ -66,26 +66,18 @@ Belongs-test can extract the following information from the databases:
 
 ## Installation
 
-For installation please consider the following steps:
-
-- Clone the repository from git [link to repository](https://github.com/.git)
-
-- Build docker image (~docker-compose build)
-- Start the docker image (~docker-compose up)
-
+To use the code after cloning, install all required libraries by running in the terminal,
+$ pip install -r requirements.txt
 ---
 
 ## Usage
 
-Detailed documentation for usage of code was provided in ...
+For getting the requested statistics by the business requirements run the following in the terminal,
+$ python extract_stats.py
 
----
+To get the requested bussiness requirements plus suggested statistics run the following in the terminal,
+$ python extract_stats_promoted.py
 
-## Testing
-
-To run unit tests please run the following command:
-
-~python test.py
 
 ---
 
