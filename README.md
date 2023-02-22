@@ -4,7 +4,7 @@ Pedestrian Counting System
 The solution aims to extract statistics from two datasets and derive additional metrics. The two 
 datasets, Sensors and Counts, contain data on the pedestrian counting system in a particular 
 area.  The  solution  will  load  and  stage  the  data  in  an  appropriate  format  to  enable  efficient 
-querying. The full description about, data processing, model designing, and staging can be found in [documentation_file](doc//documentation_file.pdf)
+querying. The full description about, data processing, model designing, and staging can be found in [documentation_file](doc/documentation_file.pdf)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
