@@ -68,6 +68,7 @@ Belongs-test can extract the following information from the databases:
 
 To use the code after cloning, install all required libraries by running in the terminal,
 $ pip install -r requirements.txt
+
 ---
 
 ## Usage
