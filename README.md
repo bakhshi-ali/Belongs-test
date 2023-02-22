@@ -34,10 +34,11 @@ Pedestrian Counting System
 
 ## List of Technologies
 
-I used the following technologies for creating image-labeling-api.
+I used the following technologies for creating Belongs-test.
 | Technology | Description | Version |
 |------------|-------------------------------------------|--------|
 | Python | Main programming language | 3.9.6 |
+| Sqlite3 |  Small, fast, self-contained SQL database engine |  |
 
 
 ---
