@@ -82,10 +82,10 @@ $ python extract_stats_promoted.py
 
 ---
 
-### Database design and data modelling
+## Database design and data modelling
 
 Based on provided datasets, the data model can be described as having two entities: Sensors and Counts.
-# The Sensors entity has the following attributes:
+### The Sensors entity has the following attributes:
 - sensor_id (unique identifier for each sensor)
 - sensor_description (description of the sensor)
 - sensor_name (name of the sensor)
@@ -98,7 +98,7 @@ Based on provided datasets, the data model can be described as having two entiti
 - longitude (longitude of the sensor)
 - location (location of the sensor)
 
-# The Counts entity has the following attributes:
+### The Counts entity has the following attributes:
 - id (unique identifier for each count)
 - date_time (date and time of the count)
 - year (year of the count)
