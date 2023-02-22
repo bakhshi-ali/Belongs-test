@@ -10,7 +10,6 @@ Pedestrian Counting System
 - [Features](#Features)
 - [Installation](#Installation)
 - [Usage](#Usage)
-- [Testing](#Testing)
 - [Design and Architecture](#Design-and-Architecture)
 - [Deployment Suggestions](#Deployment-Suggestions)
 - [License](#License)
@@ -37,7 +36,8 @@ Pedestrian Counting System
 I used the following technologies for creating image-labeling-api.
 | Technology | Description | Version |
 |------------|-------------------------------------------|--------|
-| Python | Main programming language | 3.9.6 |
+| Python | Main programming language | 3.11.2 |
+| Sqlite3 | C-language library that implements a small, fast, self-contained, high-reliability, full-featured, SQL database engine |  |
 
 
 ---
@@ -65,26 +65,24 @@ Belongs-test can extract the following information from the databases:
 
 ## Installation
 
-For installation please consider the following steps:
+After cloning the repository into your local workstation, please install all necessary documents by running,
 
-- Clone the repository from git [link to repository](https://github.com/.git)
-
-- Build docker image (~docker-compose build)
-- Start the docker image (~docker-compose up)
+- pip install -r requirements.txt
 
 ---
 
 ## Usage
 
-Detailed documentation for usage of code was provided in ...
+After installing all required libraries, you can run the code in your terminal by,
 
----
+For requested stats:
 
-## Testing
+$ python extract_stats.py
 
-To run unit tests please run the following command:
+For requested + suggested stats:
 
-~python test.py
+$ python extract_stats_promoted.py
+
 
 ---
 
