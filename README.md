@@ -18,14 +18,14 @@ Pedestrian Counting System
 
 ---
 
-## Task Description
+# Task Description
 
-# Extract Stats : Need to show these expected outputs.
+## Extract Stats : Need to show these expected outputs.
 - Top 10 (most pedestrians) locations by day
 - Top 10 (most pedestrians) locations by month
 - Which location has shown most decline due to lockdowns in last 2 years
 - Which location has most growth in last year
-# Load & Stage Data in an appropriate format for future querying 
+## Load & Stage Data in an appropriate format for future querying 
 - For this purpose you can mock up data visually to represent tables and columns
 - What other metrics can be derived that you can suggest from these data sets
 - Describe the data model and include a diagram
