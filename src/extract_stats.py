@@ -3,6 +3,7 @@ import sqlite3
 from datetime import datetime
 import os
 
+
 # Get the absolute path of the script
 script_path = os.path.abspath(__file__)
 # Get the directory containing the script
@@ -11,15 +12,12 @@ script_dir = os.path.dirname(script_path)
 os.chdir(script_dir)
 
 # Load the sensors data
-# sensors_df = pd.read_csv('pedestrian-counting-system-sensor-locations.csv')
+path_to_the_sensor_dataset = '../pedestrian-counting-system-sensor-locations.csv'
+path_to_the_counts_dataset = '../Pedestrian_Counting_System_Monthly_counts_per_hour_may_2009_to_14_dec_2022.csv'
+sensors_df = pd.read_csv(path_to_the_sensor_dataset)
 # Load the counts data
-# counts_df = pd.read_csv('Pedestrian_Counting_System_Monthly_counts_per_hour_may_2009_to_14_dec_2022.csv')
+counts_df = pd.read_csv(path_to_the_counts_dataset)
 
-# Read the first 100 rows of the sensors dataset, excluding the first row
-sensors_df = pd.read_csv('pedestrian-counting-system-sensor-locations.csv', skiprows=0, nrows=100000)
-
-# Read the first 100 rows of the counts dataset, excluding the first row
-counts_df = pd.read_csv('Pedestrian_Counting_System_Monthly_counts_per_hour_may_2009_to_14_dec_2022.csv', skiprows=0, nrows=100000)
 
 # Print the column names of the first table
 print('Columns in sensors_df:')
@@ -108,3 +106,31 @@ print('Retrived Sensor data from database', sensors_data)
 # Execute a SQL query to retrieve data from the counts table
 counts_data = pd.read_sql_query("SELECT * from counts", connect_to_sqlite)
 print('Retrived Sensor data from database', counts_data)
+
+
+# Define a list of dictionaries containing the results
+results = [
+    {'type': 'Location with the most decline due to lockdowns in the last 2 years', 'data': most_decline},
+    {'type': 'Location with the most growth in the last year', 'data': most_growth},
+]
+
+# Create an empty DataFrame
+summary_table = pd.DataFrame()
+
+# Iterate over the results and append them to the summary table
+for result in results:
+    # Get the type and data of the result
+    result_type = result['type']
+    result_data = result['data']
+    # Create a new DataFrame with the type and data
+    result_df = pd.DataFrame({'type': [result_type], 'data': [result_data]})
+    # Append the new DataFrame to the summary table
+    summary_table = summary_table.append(result_df, ignore_index=True)
+
+print('*************************** Summary of all results ***************************')
+# Print the summary table
+print(summary_table)
+print("Top 10 (most pedestrians) locations by day:")
+print(top10_day)
+print("Top 10 (most pedestrians) locations by month:")
+print(top10_month)
